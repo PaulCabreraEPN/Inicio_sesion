@@ -39,6 +39,7 @@ public class login {
                         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                         frame.setSize(550,500);
                         frame.setVisible(true);
+                        ((JFrame)SwingUtilities.getWindowAncestor(iniciarSesionButton)).dispose();
                     }else {
                         estado.setText("Contraseña Incorrecta");
                     }
